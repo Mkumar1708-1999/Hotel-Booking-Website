@@ -1,0 +1,217 @@
+#index-container {
+    display: flex;
+    flex-direction: column;
+}
+#city-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.city-image{
+    padding: 4% 0%;
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+}
+.city-card-and-name-inner {
+    position: relative;
+}
+/* Added CSS for background image */
+#banner{
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    /* Control the height of the image */
+    height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#search-bar {
+    position: absolute;
+    top: 50%;
+    left: 36%; 
+    right: 36%;
+    bottom: 50%;
+}
+#search-input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 100%;
+}
+#search-input:focus {
+    outline: none;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    text-align: center;
+    border-radius: 25%;
+}
+.city-card-and-name-inner:hover .overlay {
+    opacity: 1;
+}
+.overlay span {
+    position:relative;
+    top:45%;
+}
+#view-more {
+    margin-bottom:7%;
+    display: flex;
+    justify-content: center;
+}
+.image_container {
+    margin: 2% 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.image_container2 {
+    margin: 2% 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.img_cont2 {
+    position: relative;
+    margin: 4% 0;
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 25%;
+    display: none;
+}
+
+.img_cont {
+    position: relative;
+    margin: 4% 0;
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 25%;
+}
+
+.city_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
+
+
+
+#delhi_bd,
+#goa_bd,
+#hyd_bd,
+#kolk_bd, 
+#che_bd,
+#jai_bd,
+#agra_bd,
+#bln_bd
+{
+    position: absolute;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#delhi_bd:hover {
+    opacity: 1;
+}
+
+#goa_bd:hover {
+    opacity: 1;
+}
+
+#hyd_bd:hover {
+    opacity: 1;
+}
+
+#kolk_bd:hover {
+    opacity: 1;
+}
+#che_bd:hover {
+    opacity: 1;
+}
+#agra_bd:hover {
+    opacity: 1;
+}
+#jai_bd:hover {
+    opacity: 1;
+}
+#bln_bd:hover {
+    opacity: 1;
+}
+@media screen and (max-width: 576px) {
+    #search-bar {
+        width: 60%;
+    }
+    #city-cards {
+        flex-direction: column;
+        margin: auto;
+    }
+    .img_cont{
+        height: 200px;
+        width: 200px;
+    }
+    .city-card-and-name-inner {
+        padding: 4% 0%;
+    }
+    #view-more {
+        margin-bottom:20%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    #search-bar {
+        width: 60%;
+    }
+    #city-cards {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .img_cont{
+        height: 250px;
+        width: 260px;
+    }
+    .city-card-and-name-inner {
+        padding: 4% 0%;
+    }
+}
+
+.search-items {
+    border: 1px solid #d4d4d4;
+    z-index: 99;
+    width: 100%;
+}
+.search-items div{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+    border-radius: 12px;
+}
+.search-items div:hover {
+    background-color: #e9e9e9; 
+}
+.search-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}

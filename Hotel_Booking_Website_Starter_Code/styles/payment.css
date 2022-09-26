@@ -1,0 +1,41 @@
+/* styling content */
+
+.content {
+    margin: 7% 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.description {
+    background-color: rgb(132, 136, 139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+}
+
+#radison_img {
+    max-width: 270px;
+    max-height: 300px;
+}
+
+.hotel_info {
+    margin-left: 10px;
+}
+
+strong {
+    font-family: cursive;
+}
+
+.payment {
+    border: 1px black solid;
+    margin: 2%;
+    border-radius: 5px;
+    width: 96%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rosybrown;
+}
